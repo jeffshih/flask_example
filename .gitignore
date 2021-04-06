@@ -1,0 +1,12 @@
+#mac osx file
+.DS_Store
+
+#env stuff
+env/
+flask/
+pyvenv.cfg
+.vscode/
+*.txt
+*.json
+*.csv
+*.egg-info/
