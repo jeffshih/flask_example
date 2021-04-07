@@ -1,0 +1,9 @@
+ FROM python:3.8.6-slim-buster
+ MAINTAINER jeffshih <jeffhfs1224@gmail.com>
+ RUN apt-get update && apt-get install -y\
+         libpq-dev\
+         build-essential
+ WORKDIR /Flask_api
+ COPY . .
+ RUN pip install -r requirements.txt
+ CMD python main.py
